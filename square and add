@@ -1,0 +1,29 @@
+a=int(input())
+k=a**2
+t=k
+f=t
+c=0
+s=0
+if(a>0):
+    while(k!=0):
+        c+=1
+        k=k//10
+    p=c//2
+    if(p==1):
+        while(t!=0):
+            s+=t%10
+            t=t//10
+    elif(p==2):
+        while(t!=0):
+            s+=t%100
+            t=t//100
+    elif(p==3):
+        while(t!=0):
+            s+=t%1000
+            t=t//1000
+    if(f==s):
+        print("True")
+    else:
+        print("Flase")
+else:
+    print(-1)
